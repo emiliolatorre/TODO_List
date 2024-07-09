@@ -1,0 +1,55 @@
+h2 {
+    display: block;
+    text-align: left;
+    margin-left: 53px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 1px solid rgb(231, 231, 231); */
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(72, 72, 72, 0.15);
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 90%;
+    background-color: white;
+    height: 50px;
+}
+
+.form input {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 30px;
+    width: 250px;
+}
+
+.btnCreateTask {
+    max-width: fit-content;
+    height: 40px;
+    margin:  0;
+    margin-right: 10px;
+    margin-left: auto;
+    position: relative;
+    background-color: blue;
+    color: white;
+}
+
+.pErrorDesc {
+    color: red;
+    font-size: 13px;
+    font-style: italic;
+    margin-top: -22px;
+    text-align: center;
+    display: block;
+    margin-left: -230px;
+    margin-bottom: -17px;
+}
+
+i {
+    font-size: 13px;
+    margin-left: auto;
+    margin-right: 10px;
+}

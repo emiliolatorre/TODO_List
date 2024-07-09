@@ -1,16 +1,20 @@
+// Un componente Item o Card que contenga cada TO-DO
 import React from "react";
-import './TodoItem.css'
+import './TodoCard.css'
 
-const TodoItem = ({dataItem:{title,desc,img_url}, deleteCard, editCard}) => {
+const TodoItem = ({ dataItem: { title, desc, status }, deleteCard, editCard }) => {
   return <article>
-    <h3>Título: {title}</h3>
-    <p>Descripción: {desc}</p>
-    <img src={img_url} alt={title} className="pigture"/>
-    <div>
-    <button onClick={deleteCard} >Borrar</button>
-    <button onClick={editCard} >Editar</button>
+    <div className="text-container">
+      <h3>{title}</h3>
+      <p>{desc}</p>
+      <p className="status">Status: {status}</p>
+      <div className="button-container">
+        {/* Botón BORRAR, asociado a cada tarea, para poder borrar de manera independiente */}
+        <button className="btnDelete" onClick={deleteCard} >Borrar</button>
+        <button className="btnEdit" onClick={editCard} >Editar</button>
+      </div>
     </div>
-    </article>;
+  </article>;
 };
 
 export default TodoItem;
